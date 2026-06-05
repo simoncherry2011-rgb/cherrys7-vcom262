@@ -1,0 +1,217 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #34739B;
+  color: #ffffff;
+  overflow: hidden;
+  padding: 10px;
+}
+
+
+.container6 {
+  background-color: #0093F0;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 12px rgb(0, 0, 0, 0.1);
+  width: 80%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  margin: 300px auto;
+}
+
+
+h1 {
+  margin-bottom: 1.5rem;
+  text-shadow: 0 15px 12px rgb(0, 0, 0, 0.1);
+}
+
+#question {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 0 15px 12px rgb(0, 0, 0, 0.1);
+}
+
+
+#choices button {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  width: 100%;
+  background: rgba(0, 255, 255, 0.08);
+  border: 2px solid #F08C00;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 15px 12px rgb(0, 0, 0, 0.1);
+  text-shadow: 0 15px 12px rgb(0, 0, 0, 0.1);
+}
+
+#choices button:hover {
+  background-color: #A35F00;
+  color: #ffffff;
+  transform: scale(1.03);
+  box-shadow: 0 15px 12px rgb(0, 0, 0, 0.1);;
+}
+
+#nextBtn, #restartBtn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #F08C00;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 15px 12px rgb(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#nextBtn:hover, #restartBtn:hover {
+  background-color: #A35F00;
+  transform: scale(1.05);
+  box-shadow: 0 15px 12px rgb(0, 0, 0, 0.1);
+}
+
+#result {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  color: #ffffff;
+  text-shadow: 0 15px 12px rgb(0, 0, 0, 0.1);
+}
+
+#timer {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ffffff;
+  text-shadow: 0 15px 12px rgb(0, 0, 0, 0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+h1 {
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+h2 {
+    display: flex;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+p {
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button {
+   background-color: #F08C00 ; 
+   color: #FFFFFF;
+   font-family: Arial, Helvetica, sans-serif;
+}
+button:hover {
+  background-color: #A35F00;
+  text-decoration: underline;
+}img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; 
+   box-shadow: 0 15px 12px rgb(0, 0, 0, 0.1);
+}
+li {
+    padding: 8px;
+    line-height: 1.2;
+}
+footer {
+    background-color: #458FBE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+#nav-bar {
+    background-color: #0093F0 ;
+    padding: 0 20px;
+    box-shadow: 0 4px 12px rgb(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-list {
+    display: flex;
+    list-style: none;
+}
+.Navigation:Hover {
+    text-decoration: underline;
+    color: #F08C00;
+}
+#norm {
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+.flexDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+  margin: 10px;
+  left: 285px;
+  bottom:85px;
+  z-index: 10;
+}
+.selectWrapper {
+  width: 100%;
+  position: relative;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 100ms linear 0s;
+  filter: drop-shadow(0 6px 26px rgba(0, 0, 0, 0.24));
+  padding-top: calc(var(--sizeVar) / 2);
+}
+.multiSelect {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  border: 1px solid var(--borderColor);
+  box-sizing: border-box;
+  border-radius: calc(var(--sizeVar) / 2);
+  position: absolute;
+  width: auto;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background: #0093F0;
+  transition: transform 300ms ease-in-out 0s, clip-path 300ms ease-in-out 0s;
+  z-index: 15;
+}
+.multiSelect div {
+  color: var(--textPrimary);
+  padding: 16px;
+  width: auto;
+  cursor: pointer;
+}
+.multiSelect div:hover {
+  background-color: #F08C00;
+  text-decoration: underline;
+}
+.sec_btn {
+  width: 125px;
+  margin: 0px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 11pt;
+}
