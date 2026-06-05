@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../../Images/Phage-Exterior.png" type="image/ico">
+  <title>Games - Diagram</title>  
+  <link rel="stylesheet" href="../../Extra/Diagram-Game.css">
+  <style>
+    tr {
+      text-align: center;
+    }
+    @media (min-width: 600px) {
+  #Welcome {
+    font-size: 50pt;
+  }
+  #imgss img {
+    max-height: 300px;
+  }
+  .dot {
+  cursor: pointer;
+  height: 17px;
+  width: 17px;
+  }
+  #Welcome2 {
+    font-size: 25pt;
+  }
+  #Carlos {
+  text-decoration: underline;
+  padding: 15px;
+  font-size: 15pt ;
+  border-radius: 3px;
+}
+}
+@media (min-width: 1024px) {
+  #Welcome {
+   font-size: 70pt;
+  }
+  #imgss img {
+    max-height: 400px;
+}
+.dot {
+  cursor: pointer;
+  height: 19px;
+  width: 19px;
+}
+ #Welcome2 {
+    font-size: 30pt;
+  }
+  #Carlos {
+  text-decoration: underline;
+  padding: 17px;
+  font-size: 17pt ;
+  border-radius: 3px;
+}
+}
+@media (min-width: 1440px) {
+  #Welcome {
+   font-size: 80pt;
+  }
+  #imgss img {
+    max-height: 500px;
+}
+.dot {
+  cursor: pointer;
+  height: 21px;
+  width: 21px;
+}
+ #Welcome2 {
+    font-size: 35pt;
+  }
+    #Carlos {
+  text-decoration: underline;
+  padding: 19px;
+  font-size: 19pt ;
+  border-radius: 3px;
+}
+}
+  </style>
+</head>
+<body>
+  <div class="nav">
+        <nav id="nav-bar">
+            <h1 id="logo">Phages</h1>
+            <ul id=nav-list>
+                <li id="norm"><a href="../../index.html"><p class="Navigation">Home</p></a></li>
+                <li id="norm"><a href="../Learn/what-is-a-phage.html"><p class="Navigation">Learn</p></a></li>
+                <li>   <div class="flexDiv">
+      <button class="sec_btn" onclick="openMulti();">Discovery</button>
+    </li>
+            </ul>
+        </nav>
+          <div class="selectWrapper">
+      <div class="multiSelect" id="menu-0">
+      <div onclick="openMulti();" class="invisible-div"><a href="../Discovery/Isolation.html">Isolation</a></div>
+      <div onclick="openMulti();" class="invisible-div"><a href="../Discovery/Purification.html">Purification</a></div>
+      <div onclick="openMulti();" class="invisible-div"><a href="../Discovery/Amplification.html">Amplification</a></div>
+      <div onclick="openMulti();" class="invisible-div"><a href="../Discovery/Extraction.html">Extraction</a></div>
+      <div onclick="openMulti();" class="invisible-div"><a href="../Games/Interactivity.html">Games</a></div>
+      </div>
+    </div>
+  <div style="margin-top: 250px;">
+  <h1 id="Welcome">Phage Matching Game</h1>
+  <p id="Welcome2">Drag the word over to the matching image</p>
+  </div>
+
+  <main class="container7">
+    <div>
+      <ul class="draggable-list" id="draggable-list2">
+        <li class="item" id="e1" draggable="true">Capsid</li>
+        <li class="item" id="e2" draggable="true">Baseplate</li>
+        <li class="item" id="e3" draggable="true">Tail Fiber</li>
+        <li class="item" id="e4" draggable="true">Collar</li>
+        <li class="item" id="e5" draggable="true">Tail</li>
+        <li class="item" id="e6" draggable="true">Sheath</li>
+      </ul>
+    </div>
+    <div>
+      <ul class="draggable-list" style="margin: 0 auto;">
+        <li class="dropbox" id="s2" draggable="true"><img src="../../Images/Baseplate-Diagram-Game.jpg" alt="A picture of the Baseplate from the original diagram on the page what is a phage"></li>
+        <li class="dropbox" id="s5" draggable="true"><img src="../../Images/Tail-Diagram-Game.jpg" alt="A picture of the Tail from the original diagram on the page what is a phage"></li>
+        <li class="dropbox" id="s1" draggable="true"><img src="../../Images/Capsid-Diagram-Game.jpg" alt="A picture of the Capsid from the original diagram on the page what is a phage"></li>
+        <li class="dropbox" id="s3" draggable="true"><img src="../../Images/Tail-Fiber-Diagram-Game.jpg" alt="A picture of the Tail Fibers from the original diagram on the page what is a phage"></li>
+        <li class="dropbox" id="s4" draggable="true"><img src="../../Images/Collar-Diagram-Game.jpg" alt="A picture of the Collar from the original diagram on the page what is a phage"></li>
+        <li class="dropbox" id="s6" draggable="true"><img src="../../Images/Sheath-Diagram-Game.jpg" alt="A picture of the Sheath from the original diagram on the page what is a phage"></li>
+      </ul>
+    </div>
+  </main>
+
+  <div id="endMessage">
+    <h1 id="Welcome">Well done!</h1>
+    <table>
+      <tr>
+        <th>Part</th>
+        <th>Image</th>
+      </tr>
+      <tr>
+        <td>Capsid</td>
+        <td><img src="../../Images/Capsid-Diagram-Game.jpg" alt="A picture of the Capsid from the original diagram on the page what is a phage"></td>
+      </tr>
+      <tr>
+        <td>Tail</td>
+        <td><img src="../../Images/Tail-Diagram-Game.jpg" alt="A picture of the Tail from the original diagram on the page what is a phage"></td>
+      </tr>
+      <tr>
+        <td>Tail Fibers</td>
+        <td><img src="../../Images/Tail-Fiber-Diagram-Game.jpg" alt="A picture of the Tail Fibers from the original diagram on the page what is a phage"></td>
+      </tr>
+      <tr>
+        <td>Collar</td>
+        <td><img src="../../Images/Collar-Diagram-Game.jpg" alt="A picture of the Collar from the original diagram on the page what is a phage"></td>
+      </tr>
+      <tr>
+        <td>Sheath</td>
+        <td><img src="../../Images/Sheath-Diagram-Game.jpg" alt="A picture of the Sheath from the original diagram on the page what is a phage"></td>
+      </tr>
+      <tr>
+        <td>Baseplate</td>
+        <td><img src="../../Images/Baseplate-Diagram-Game.jpg" alt="A picture of the Baseplate from the original diagram on the page what is a phage"></td>
+      </tr>
+    </table>
+
+    <button class="button" onclick="playAgain()">Play Again</button>
+  </div>
+
+  <script src="../../Extra/Diagram-Game.js"></script>
+  <script src="../../Extra/interactive-elements.js"></script>
+
+  
+</body>
+</html>
