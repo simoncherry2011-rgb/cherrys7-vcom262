@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purification | Phages</title>
+    <link rel="icon" href="../../Images/Phage-Exterior.png" type="image/ico">
+    <link rel="stylesheet" href="../../Extra/formatting.css">
+<style>
+    @media (min-width: 600px) {
+  #weird {
+    font-size: 20pt;
+  }
+  #description {
+    font-size: 20pt;
+  }
+.continue{
+    font-size: 19pt;
+}
+ #Welcome2 {
+    font-size: 25pt;
+  }
+.zoom {
+    width: 400px;
+    height: 400px;
+}
+#special {
+    margin-top: 60px;
+}
+#special2 {
+    margin-top: 200px;
+}
+#description3 {
+  font-size: 15pt;
+  margin-top: 140px;
+}
+}
+
+  @media (min-width: 1024px) {
+  #weird {
+    font-size: 25pt;
+  }
+ #description {
+    font-size: 25pt;
+ }
+.continue{
+    font-size: 21pt;
+}
+ #Welcome2 {
+    font-size: 30pt;
+  }
+  .zoom {
+    width: 500px;
+    height: 500px;
+}
+#special {
+    margin-top: 80px;
+}
+#special2 {
+    margin-top: 250px;
+}
+#description3 {
+  font-size: 18pt;
+  margin-top: 175px;
+}
+}
+
+@media (min-width: 1440px) {
+  #weird {
+    font-size: 30pt;
+  }
+ #description {
+    font-size: 30pt;
+}
+.continue{
+    font-size: 23pt;
+}
+ #Welcome2 {
+    font-size: 35pt;
+  }
+  .zoom {
+    width: 600px;
+    height: 600px;
+}
+#special {
+    margin-top: 100px;
+}
+#special2 {
+    margin-top: 300px;
+}
+#description3 {
+  font-size: 20pt;
+  margin-top: 200px;
+}
+}
+</style>
+</head>
+<body>
+<div class="nav">
+        <nav id="nav-bar">
+            <h1 id="logo">Phages</h1>
+            <ul id=nav-list>
+                <li id="norm"><a href="../../index.html"><p class="Navigation">Home</p></a></li>
+                <li id="norm"><a href="../Learn/what-is-a-phage.html"><p class="Navigation">Learn</p></a></li>
+                <li>   <div class="flexDiv">
+      <button class="sec_btn" onclick="openMulti();">Discovery</button>
+    </li>
+            </ul>
+        </nav>
+          <div class="selectWrapper">
+      <div class="multiSelect" id="menu-0">
+      <div onclick="openMulti();" class="invisible-div"><a href="Isolation.html">Isolation</a></div>
+      <div onclick="openMulti();" class="invisible-div"><a href="Purification.html">Purification</a></div>
+      <div onclick="openMulti();" class="invisible-div"><a href="Amplification.html">Amplification</a></div>
+      <div onclick="openMulti();" class="invisible-div"><a href="Extraction.html">Extraction</a></div>
+      <div onclick="openMulti();" class="invisible-div"><a href="../Games/Interactivity.html">Games</a></div>
+    </div>
+    </div>
+<main>
+<div class="container" id="weird">
+    <h1>Purification</h1>
+</div>
+<div class="container3" id="description" style="margin-top: 100px;">
+    <p>In a sample of phage buffer, there are <b>thousands</b> of different phages, but we only need one!<p>
+</div>
+<div class="container2" id="description" style="margin-top: 200px;">
+    <div>
+        <h3><b>Picking A Plaque</b></h3>
+    </div>
+    <p>Normally, there are tons of different plaques on the plaque assay due to how abundant they are.<p>
+    <p>We need to pick just one, and we will use that as our base line to isolate a single type of phage </p> 
+</div>
+<div class="container2" id="description" style="margin-top: 200px;">
+    <div>
+        <h3><b>Serial Dilutions</b></h3>
+    </div>
+    <p>By deluding our sample of the picked plaque, we are able to lessen its concentration, and thus come closer to a single strand of phage.<p>
+    <p>This step is painstakingly tedious!</p> 
+</div>
+<div class="zoom">
+    <img src="../../Images/Dillutions.jpg" alt="A series of microcentrifuge tubes in a rack marked 10^-1 all the way to 10^-8">
+    <p style="text-align: center;">Microcentrifuge Tubes With Phage Particles and Buffer</p>
+</div>
+<div id="description3">
+    <p>Hover</p>
+</div>
+<div class="container4" id="description" style="margin-top: 200px;">
+    <div>
+        <h3><b>Purified Sample</b></h3>
+    </div>
+    <p>If everything goes correctly, we should be left with a plaque assay that looks something like this:<p>
+<div class="zoom">
+    <img src="../../Images/Purified.jpg" alt="A petri dish being held toward the celling. The dish has tiny holes in the bacterial lawn.">
+    <p style="text-align: center;">Plaque Assay Results</p>
+</div>
+<div id="special2">
+<p>See how all the plaques look similar? That means we’ve successfully isolated a singular phage type.</p> 
+</div>
+</div>
+<div id="description3">
+    <p>Hover over image</p>
+</div>
+<div class="container" style="margin-top: 100px;">
+    <button class="continue" id="special"><a href="Amplification.html">Continue</a></button>
+</div>
+</main>
+<script src="../../Extra/interactive-elements.js"></script>
+</body>
+<div>
+  <footer>
+    <div>
+      <section>
+        <div class="container">
+            <h2>Phages</h2>
+          </div>
+        <hr>
+          <div id="foottxt">
+            <h2>Contact</h2>
+            <p>New York, NY 10012, US</p>
+            <p>phages@gmail.com</p>
+            <p>+ 01-234-567-88 (phone)</p>
+            <p>+ 01-234-567-89 (fax)</p>
+          </div>
+          <hr>
+            <div>
+              <p>© 2026 Copyright: Phages.com</p>
+            </div>
+      </section>
+    </div>
+  </footer>
+</div>
+</html>
